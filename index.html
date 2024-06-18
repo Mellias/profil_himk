@@ -5,56 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page HIMK</title>
 
-    <link rel="stylesheet" href="app.css" />
-
+    <link rel="stylesheet" href="css/app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" 
         rel="stylesheet"
     >
-
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" 
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="navbar-container">
         <div class="logo">
-            <img src="images/Logo-HIMK.jpg" alt="Himpunan Mahasiswa Kundur (HIMK)" />
+            <img src="images/Logo-HIMK.png" alt="Himpunan Mahasiswa Kundur (HIMK)" />
         </div>
-        <nav class="nav-list">
+        <div class="nav-list">
             <ul>
+                <li><a href="index.html">Beranda</a></li>
                 <li><a href="abouthimk.html">Tentang HIMK</a></li>
                 <li><a href="artikel.html">Artikel</a></li>
                 <li><a href="berita.html">Berita</a></li>
                 <li><a href="opini.html">Opini</a></li>
-                <li><a href="tentangkundur.html">Tentang Kundur</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
             </ul>
-        </nav>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/himktanjungpinang23?igsh=ZzhtNjNqcjM0ZjZp" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@himktanjungpinang-bintan8205?si=HBY2ZYLgfyDWR8Nl" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100011685574469" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
     </header>
 
     <main>
         <div class="content">
             <div class="content-description">
-                <h1 class="title">Himpunan Mahasiswa Kundur (HIMK)</h1>
-                <p>
-                    Selamat datang di situs web profil Himpunan Mahasiswa Kundur (HIMK). 
-                    Sebuah platform yang hadir sebagai wujud eksistensinya mahasiswa-mahasiswa Kundur yang berkuliah di Tanjungpinang-Bintan.
-                </p>
-
-                <button>Lebih lanjut</button>
+                <div class="welcome-content">
+                    <img src="images/HUT-HIMK-ke-11.png" alt="HIMK Tanjungpinang-Bintan" class="welcome-image"> 
+                </div>
+                <div>
+                    <h1 class="title">Himpunan Mahasiswa Kundur (HIMK)</h1>
+                    <p>
+                        Selamat datang di situs web profil Himpunan Mahasiswa Kundur (HIMK). 
+                        Sebuah platform yang hadir sebagai wujud eksistensinya mahasiswa-mahasiswa Kundur yang berkuliah di Tanjungpinang-Bintan.
+                    </p>
+                    <button><a href="abouthimk.html">Kenali HIMK lebih lanjut, yuk</a></button>
+                </div>
             </div>
         </div>
+
+        <section class="posts-section">
+            <div class="section-header">
+                <h2>Artikel</h2>
+                <button><a href="artikel.html">Lainnya</a></button>
+            </div>
+            <div class="gallery">
+                <div class="post">
+                    <img src="images/artikel1.png" alt="Wisata Mangrove Mengkuse">
+                    <h3>Menyusuri Wisata Mangrove Mengkuse Saat Pandemi</h3>
+                    <a href="artikel1.html">Jom bace lagi</a>
+                </div>
+                <div class="post">
+                    <img src="images/artikel2.png" alt="Mengkuse, Sawang Selatan">
+                    <h3>5 Hari Pengabdian di Mengkuse, Sawang Selatan</h3>
+                    <a href="artikel2.html">Jom bace lagi</a>
+                </div>
+                <div class="post">
+                    <img src="images/artikel3.png" alt="Himpunan Mahasiswa Kundur">
+                    <h3>Tanggul dan Pintu Air, Infrastruktur yang dibutuhkan Masyarakat Sungai Ungar Utara</h3>
+                    <a href="artikel3.html">Jom bace lagi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="posts-section">
+            <div class="section-header">
+                <h2>Berita</h2>
+                <button><a href="berita.html">Lainnya</a></button>
+            </div>
+            <div class="gallery">
+                <div class="post">
+                    <img src="images/berita1.png" alt="Berita 1">
+                    <h3>HIMK Tanjungpinang-Bintan Laksanakan Sosialisasi Perguruan Tinggi, Jalur Masuk, dan Beasiswa di Pulau Kundur, Kabupaten Karimun</h3>
+                    <a href="berita1.html">Jom bace lagi</a>
+                </div>
+                <div class="post">
+                    <img src="images/berita2.png" alt="Berita 2">
+                    <h3>Teori Tringa Jadi Dasar Latihan Kepemimpinan HIMK</h3>
+                    <a href="berita2.html">Jom bace lagi</a>
+                </div>
+                <div class="post">
+                    <img src="images/berita3.png" alt="Berita 3">
+                    <h3>Berjalan dengan Antusias, HIMK Mengadakan Sosialisasi ke Sebelas</h3>
+                    <a href="berita3.html">Jom bace lagi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="posts-section">
+            <div class="section-header">
+                <h2>Opini</h2>
+                <button><a href="opini.html">Lainnya</a></button>
+            </div>
+            <div class="gallery">
+                <div class="post">
+                    <img src="images/opini1.png" alt="Opini 1">
+                    <h3>Apakah OPD Kabupaten Karimun Serius dalam Memikirkan Daerah?</h3>
+                    <a href="opini1.html">Jom bace lagi</a>
+                </div>
+                <div class="post">
+                    <img src="images/opini2.png" alt="Opini 2">
+                    <h3>Awas Serangan Fajar</h3>
+                    <a href="opini2.html">Jom bace lagi</a>
+                </div>
+                <div class="post">
+                    <img src="images/opini3.png" alt="Opini 3">
+                    <h3>Usai di Revitalisasi, Pasar Sawang Tak Berpenghuni</h3>
+                    <a href="opini3.html">Jom bace lagi</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Copyright &#169; 2024, Amelia</p>
-    </footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>Himpunan Mahasiswa Kundur Tanjungpinang-Bintan</h2>
+                <p>Sekretariat: Jalan Garuda Perum Kenangan Jaya 6 Blok G+ No A5, Tanjungpinang, 29122, Kepulauan Riau, Indonesia</p>
+            </div>
+            <div class="footer-right">
+                <p>Temukan kami di</p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/himktanjungpinang23?igsh=ZzhtNjNqcjM0ZjZp" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@himktanjungpinang-bintan8205?si=HBY2ZYLgfyDWR8Nl" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011685574469" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>Copyright &#169; 2024, HIMK Tanjungpinang-Bintan</p>
+    </footer> 
+
+    <script src="app.js"></script>
 </body>
 </html>

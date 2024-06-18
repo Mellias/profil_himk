@@ -1,0 +1,251 @@
+/* Mengatur box-sizing untuk semua elemen */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Gaya untuk header */
+header {
+    width: 100%;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #fc6005;
+}
+
+/* Kontainer untuk navigasi */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Gaya untuk daftar navigasi */
+.nav-list ul {
+    display: inline-flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a {
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fc6005;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list li:hover a {
+    background-color: #fc6005;
+    color: #fff;
+}
+
+/* Gaya untuk media sosial di header */
+header .social-media {
+    display: flex;
+    gap: 8px;
+}
+
+header .social-media a {
+    color: #fc6005;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .social-media a:hover {
+    color: #333;
+}
+
+/* Gaya untuk setiap bagian post */
+.posts-section {
+    margin: 3rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.section-header button {
+    background-color: #e65500;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.section-header button a {
+    text-decoration: none;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.post {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post h3 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.post a {
+    text-decoration: none;
+    color: #fc6005;
+    font-weight: bold;
+}
+
+/* Efek hover untuk gambar */
+.post:hover img {
+    transform: scale(1.1);
+}
+
+/* Gaya untuk footer */
+footer {
+    padding: 20px;
+    background-color: #fc6005;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+    position: relative;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.footer-left, .footer-right {
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left h2 {
+    margin: 0.5rem 0;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media a {
+    color: #f8f9fa;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .nav-list li a {
+        padding: 0.5rem 1rem;
+    }
+
+    header .social-media {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    header .social-media a {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        margin-bottom: 1rem;
+    }
+}
