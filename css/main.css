@@ -15,6 +15,7 @@ body {
 /* Gaya untuk header */
 header {
     width: 100%;
+    /* font-weight: bold; */
     background-color: #f8f9fa;
     border-bottom: 1px solid #fc6005;
 }
@@ -150,12 +151,13 @@ header .social-media a:hover {
 /* Gaya untuk footer */
 footer {
     padding: 20px;
-    background-color: #fc6005;
-    color: #fff;
+    background-color: #f8f9fa;
+    color: #fc6005;
     text-align: center;
     font-weight: bold;
     margin-top: auto;
     position: relative;
+    border-top: 1px solid #fc6005;
 }
 
 footer .footer-content {
@@ -169,7 +171,7 @@ footer .footer-content {
 }
 
 .footer-left, .footer-right {
-    color: #e0e0e0;
+    color: #fc6005;
     text-align: center;
 }
 
@@ -179,7 +181,7 @@ footer .footer-content {
 
 .footer-left h2 {
     margin: 0.5rem 0;
-    color: #e0e0e0;
+    color: #fc6005;
     text-align: center;
 }
 
@@ -199,7 +201,7 @@ footer .social-media {
 }
 
 footer .social-media a {
-    color: #f8f9fa;
+    color: #fc6005;
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s;

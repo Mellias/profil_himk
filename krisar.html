@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awas Serangan Fajar</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kritik dan Saran</title>
     <link rel="icon" href="images/Logo-HIMK.png" type="image/png">
+    <link rel="stylesheet" href="css/krisar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" 
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -20,7 +17,7 @@
             <a href="index.html">
                 <img src="images/Logo-HIMK.png" alt="Himpunan Mahasiswa Kundur (HIMK)" />
             </a>
-        </div>
+        </div>        
         <div class="nav-list">
             <ul>
                 <li><a href="index.html">Beranda</a></li>
@@ -39,31 +36,33 @@
     </header>
 
     <main>
-        <div id="content">
-            <h1>Awas Serangan Fajar</h1>
-            <img src="images/opini2.png" alt="Serangan Fajar" class="featured-image">
-            <section>
-                <p>
-                    Menyambut momentum Pemilihan Umum (PEMILU) pada tahun 2024 mendatang, masih banyak politikus yang mencoba merusak jalannya proses demokrasi dan menyuburkan korupsi. Para calon yang tidak meyakini program dalam kampanye seringkali melakukan politik uang untuk dapat memenangkan kontestasi dalam PEMILU.
-                </p>
-                <p>
-                    Salah satu praktik yang sering menjadi perbincangan di masa tenang pemilu adalah politik uang dalam bentuk yang disebut "Serangan Fajar". Istilah ini digunakan untuk menyebut politik uang menjelang PEMILU.
-                </p>
-                <p>
-                    Kurangnya pemahaman beberapa masyarakat terkait serangan fajar merupakan masalah. Selain rendahnya pemahaman, masyarakat yang menerima serangan fajar biasanya adalah masyarakat dengan ekonomi menengah ke bawah, yang menjadi faktor besar mengapa mereka masih mau menerima serangan fajar tersebut.
-                </p>
-                <p>
-                    Padahal, dampak dari menerima serangan fajar sangat besar. Memilih pemimpin yang melakukan serangan fajar akan melahirkan pemimpin yang mungkin akan menjadi bibit awal korupsi. Kandidat yang berhasil menduduki kursi pemilu melalui praktik politik uang cenderung akan menyalahgunakan anggaran daerah untuk pembangunan infrastruktur ataupun pelayanan publik guna mengembalikan modal yang telah mereka keluarkan.
-                </p>
-                <p>
-                    Akibatnya, perbaikan infrastruktur dan pelayanan publik akan terganggu karena banyak pejabat yang menyalahgunakan anggaran untuk kepentingan individu atau golongan mereka sendiri.
-                </p>
-                <p>
-                    Penulis berharap masyarakat dapat lebih bijaksana dalam memilih pemimpin daerah agar ke depannya akan lebih maju, tentram, bebas dari pemimpin yang korup, tidak amanah, dan menyepelekan kepercayaan masyarakat.
-                </p>
-            </section>
-            <p><strong>Penulis: Muhammad Ary Kurniawan Saputra</strong></p>
-        </div>
+        <section id="feedback">
+            <h2>Kritik dan Saran</h2>
+            <form action="submit_feedback.php" method="post">
+                <label for="category">Kategori Masukan:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Pilih kategori masukan</option>
+                    <option value="kritik">Kritik</option>
+                    <option value="saran">Saran</option>
+                    <option value="curhatan">Curhatan</option>
+                </select>
+    
+                <label for="target">Tujuan:</label>
+                <select id="target" name="target" required>
+                    <option value="" disabled selected>Ditujukan kepada</option>
+                    <option value="HIMK">Himpunan Mahasiswa Kundur</option>
+                    <option value="perorangan">Perorangan</option>
+                </select>
+        
+                <label for="specific_name">Nama Tujuan Spesifik (boleh kosong):</label>
+                <input type="text" id="specific_name" name="specific_name" placeholder="Masukkan nama tujuan spesifik (boleh kosong)">
+        
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" placeholder="Tuliskan pesan yang ingin disampaikan..." required></textarea>
+        
+                <button type="submit">Kirim</button>
+            </form>
+        </section> 
     </main>
 
     <footer>
